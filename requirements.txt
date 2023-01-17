@@ -1,5 +1,4 @@
-Pillow
 numpy
-pandas
-matplotlib
-tensorflow==2.6.2
+seqeval
+transformers
+evaluate
