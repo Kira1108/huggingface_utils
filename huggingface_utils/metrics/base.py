@@ -7,6 +7,6 @@ class MetricCompute(ABC):
     def call(self, logits, labels) -> Dict[str, str] :
         pass
 
-    def __call__(self, logits_and_labels:Tuple) -> Dict[str, str]:
+    def __call__(self, logits_and_labels:Tuple) -> Dict[str, float]:
         logits, labels = logits_and_labels
         return self.call(logits, labels)
