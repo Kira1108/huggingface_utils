@@ -4,7 +4,7 @@ from typing import Dict, Tuple
 class MetricCompute(ABC):
 
     @abstractmethod
-    def call(self, logits, labels) -> Dict[str, str] :
+    def call(self, logits, labels) -> Dict[str, float] :
         pass
 
     def __call__(self, logits_and_labels:Tuple) -> Dict[str, float]:
